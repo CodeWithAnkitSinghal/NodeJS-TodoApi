@@ -43,15 +43,36 @@ MongoClient.connect('mongodb://localhost:27017/ToDoApp',(err, client) => {
     //     console.log('Unable to fetch data', err);
     // })
     
-    //fetch count of documents in a collection
-    db.collection('Todos')
-    .find()
-    .count()
-    .then((count) => {
-        console.log(`Todos Count: ${count}`);
-    }, (err) => {
-        console.log('Unable to fetch data', err);
-    })
+//fetch count of documents in a collection
+    // db.collection('Todos')
+    // .find()
+    // .count()
+    // .then((count) => {
+    //     console.log(`Todos Count: ${count}`);
+    // }, (err) => {
+    //     console.log('Unable to fetch data', err);
+    // })
+
+//delete Many
+    // db.collection('Todos')
+    // .deleteMany({text: 'Something to do'})
+    // .then((result) => {
+    //     console.log({result});
+    // });
+
+//delete One
+    // db.collection('Todos')
+    // .deleteOne({text: 'Something to do'})
+    // .then((result) => {
+    //     console.log({result});
+    // });
+    
+//Find one and delete
+    // db.collection('Todos')
+    // .findOneAndDelete({text: 'Something to do'})
+    // .then((result) => {
+    //     console.log({result});
+    // });
 
 //closing the mongoClient connection
 
