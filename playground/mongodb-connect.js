@@ -66,12 +66,19 @@ MongoClient.connect('mongodb://localhost:27017/ToDoApp',(err, client) => {
     // .then((result) => {
     //     console.log({result});
     // });
-    
+
 //Find one and delete
     // db.collection('Todos')
     // .findOneAndDelete({text: 'Something to do'})
     // .then((result) => {
     //     console.log({result});
+    // });
+
+//updating the document
+    // db.collection('Todos')
+    // .findOneAndUpdate({text: 'Something to do'}, {$set:{completed: false}}, {returnOriginal: false})
+    // .then((result) => {
+    //     console.log(result);
     // });
 
 //closing the mongoClient connection
