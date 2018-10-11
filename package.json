@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/CodeWithAnkitSinghal/NodeJS-TodoApi#readme",
   "dependencies": {
-    "mongodb": "^3.1.7"
+    "mongodb": "^3.1.7",
+    "mongoose": "^5.3.2"
   }
 }
